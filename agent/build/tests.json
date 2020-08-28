@@ -1,0 +1,26 @@
+{
+  "contracts": {
+    "DemandBid": "c77773410ef29d2f62a0b091e85942cdb1fdf287"
+  },
+  "tests": {
+    "tests/test_multiple_days.py": {
+      "coverage": false,
+      "isolated": [
+        "DemandBid"
+      ],
+      "results": ".",
+      "sha1": "2b90062f7de6fa0d58ca3e6c9d30454fa9e01fce",
+      "txhash": []
+    },
+    "tests/test_single_user.py": {
+      "coverage": false,
+      "isolated": [
+        "DemandBid"
+      ],
+      "results": ".",
+      "sha1": "0efeed40433e5073283efc71e9aae85f19e2d4eb",
+      "txhash": []
+    }
+  },
+  "tx": {}
+}

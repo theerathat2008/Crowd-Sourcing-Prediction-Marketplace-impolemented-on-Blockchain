@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Energy Usage</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+<section id="hero" style="background-color:#1e2844;background-image:url(../pics/homepage.png);">
+<div class="inner">
+    <div class="container" style="width: 1000px;">
+      <img src="../pics/logo.png" alt="FetchAI">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2" style="color:#FFEBCD;">
+          <h3 class="text-center" ><span class="glyphicon glyphicon-fire"></span>
+            Past Energy Usage<span class="glyphicon glyphicon-tree-conifer"></span></h3>
+          <hr/>
+          <br/>
+          <div id="loader">
+          </div>
+          <div id="content" >
+            <table class="table">
+              <thread>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Total pot</th>
+                  <th scope="col">Settlement Value</th>
+                  <th scope="col">Prediction</th>
+                </tr>
+              </thread>
+              <tbody id="pastdata"></tbody>
+            </table>
+            <hr/>
+            <p id="accountAddress" class="text-center"></p>
+          </div>
+          <div id="myChart" style="min-width: 310px; height: 400px; margin: 0 auto;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+    <!-- for the charts -->
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+    <!-- Additional files for the Highslide popup effect -->
+    <script src="https://www.highcharts.com/media/com_demo/js/highslide-full.min.js"></script>
+    <script src="https://www.highcharts.com/media/com_demo/js/highslide.config.js" charset="utf-8"></script>
+  </body>
+</html>
